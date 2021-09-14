@@ -59,6 +59,7 @@ function swap5() {
         document.getElementById('popular').style.display = 'none';
         document.getElementById('faked').style.display = 'block';
         document.getElementById('home').style.display = 'none';
+        document.getElementById('input').reset();
     }
 }
 function swap0() {

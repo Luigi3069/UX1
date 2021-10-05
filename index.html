@@ -96,7 +96,50 @@
                 </li>
                 <li class="nav-item">
                   <div id="menu4" onclick="swap4(this)"><a class="nav-link" href="#" accesskey="4">Admin</a></div>
-                </li>   
+                </li> 
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal2"><i class="">Review</i></button>
+                <div class="modal" id="myModal2">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                    
+                      <div class="modal-header">
+                        <h4 class="modal-title">Review</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      </div>
+                      
+                    <div class="modal-body">
+                        <h2>Please Select Game And Why Or Why Not You Like It</h2>
+                      <form>
+                      <div class="form-group">
+                        <label for="Gname">Game Name:</label>
+                        <input type="Text" class="form-control" id="Gname" placeholder="Enter Game Name" name="Gname">
+                      </div>
+                      <div class="form-group" style="height: 250;">
+                        <label for="WDYTT">Why Do You Think This?</label>
+                        <input type="Text" class="form-control" id="WDYTT" placeholder="" name="WDYTT" style="height: 250px;">
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" >
+                        <label class="form-check-label" for="exampleRadios1">
+                          Like
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" >
+                        <label class="form-check-label" for="exampleRadios1">
+                          Dislike
+                        </label>
+                    </div>
+                      <button type="submit" class="btn btn-primary">Submit</button>
+                      </form>
+                      </div>
+                      
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                      </div>
+                      
+                    </div>
+                  </div>  
               </ul>
               <div class="search-container">
                 <form id="input">

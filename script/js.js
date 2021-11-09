@@ -87,6 +87,12 @@ function swapcolour0() {
     if(document.getElementById('colour0').oninput) {
         console.log('I LIVE');
         document.body.setAttribute("style", "background:lightblue!important");
+        document.getElementById("title1").style.color = "Black";
+        document.getElementById("title2").style.color = "Black";
+        document.getElementById("title3").style.color = "Black";
+        document.getElementById("title4").style.color = "Black";
+        document.getElementById("title5").style.color = "Black";
+        document.getElementById("title6").style.color = "Black";
     }
 }
 function swapcolour1() {
@@ -94,6 +100,12 @@ function swapcolour1() {
     if(document.getElementById('colour1').oninput) {
         console.log('I LIVE');
         document.body.setAttribute("style", "background:#007bff!important");
+        document.getElementById("title1").style.color = "Black";
+        document.getElementById("title2").style.color = "Black";
+        document.getElementById("title3").style.color = "Black";
+        document.getElementById("title4").style.color = "Black";
+        document.getElementById("title5").style.color = "Black";
+        document.getElementById("title6").style.color = "Black";
     }
 }
 function swapcolour2() {
@@ -101,6 +113,12 @@ function swapcolour2() {
     if(document.getElementById('colour2').oninput) {
         console.log('I LIVE');
         document.body.setAttribute("style", "background:Green!important");
+        document.getElementById("title1").style.color = "Black";
+        document.getElementById("title2").style.color = "Black";
+        document.getElementById("title3").style.color = "Black";
+        document.getElementById("title4").style.color = "Black";
+        document.getElementById("title5").style.color = "Black";
+        document.getElementById("title6").style.color = "Black";
     }
 }
 function swapcolour3() {
@@ -108,6 +126,11 @@ function swapcolour3() {
     if(document.getElementById('colour3').oninput) {
         console.log('I LIVE');
         document.body.setAttribute("style", "background:Black!important");
-        document.h2 .setAttribute("style", "colour:white")
+        document.getElementById("title1").style.color = "white";
+        document.getElementById("title2").style.color = "white";
+        document.getElementById("title3").style.color = "white";
+        document.getElementById("title4").style.color = "white";
+        document.getElementById("title5").style.color = "white";
+        document.getElementById("title6").style.color = "white";
     }
 }

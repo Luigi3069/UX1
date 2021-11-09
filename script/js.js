@@ -82,3 +82,32 @@ const savetolocalstorage = () => {
 }
 //tab.addEventListener('click', savetolocalstorage)
 
+function swapcolour0() {
+    console.log('test');
+    if(document.getElementById('colour0').oninput) {
+        console.log('I LIVE');
+        document.body.setAttribute("style", "background:lightblue!important");
+    }
+}
+function swapcolour1() {
+    console.log('test');
+    if(document.getElementById('colour1').oninput) {
+        console.log('I LIVE');
+        document.body.setAttribute("style", "background:#007bff!important");
+    }
+}
+function swapcolour2() {
+    console.log('test');
+    if(document.getElementById('colour2').oninput) {
+        console.log('I LIVE');
+        document.body.setAttribute("style", "background:Green!important");
+    }
+}
+function swapcolour3() {
+    console.log('test');
+    if(document.getElementById('colour3').oninput) {
+        console.log('I LIVE');
+        document.body.setAttribute("style", "background:Black!important");
+        document.h2 .setAttribute("style", "colour:white")
+    }
+}

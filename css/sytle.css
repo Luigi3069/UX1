@@ -3,5 +3,28 @@ h1 {
     color: purple;
 }
 body {
-    background-color: lightblue;
+    background-color: lightblue !important;
+}
+
+#home {
+    display: block ;
+}
+#newest {
+    display: none;
+}
+#recentup {
+    display: none;
+}
+#popular {
+    display: none;
+}
+#faked {
+    display: none;
+}
+#WDYTT {
+    height: 250px;
+}
+.mx-auto, .d-block {
+   width: 90% !important;
+   height: 200px !important;
 }

@@ -13,7 +13,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     </head>
-    <body style="background-color: lightblue;">
+    <body>
       
         <h1>What Should I Play?</h1>
         <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
@@ -45,26 +45,29 @@
                 </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
+              <div>
+                <a class="nav-link" href="#">Sign Up</a>
+              </div>
                 </div>
-                <div class="form-check">
+                <div class="form-check" id="colour3" oninput="swapcolour3(this)">
                     <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" >
                     <label class="form-check-label" for="exampleRadios1">
                       Dark Mode
                     </label>
                 </div>
-                <div class="form-check">
+                <div class="form-check" id="colour2" oninput="swapcolour2(this)">
                     <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" >
                     <label class="form-check-label" for="exampleRadios1">
                       Xbox Colors
                     </label>
                 </div>
-                <div class="form-check">
+                <div class="form-check" id="colour1" oninput="swapcolour1(this)">
                     <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" >
                     <label class="form-check-label" for="exampleRadios1">
                       Playstation Colors
                     </label>
                 </div>
-                <div class="form-check">
+                <div class="form-check" id="colour0" oninput="swapcolour0(this)">
                       <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
                       <label class="form-check-label" for="exampleRadios1">
                       PC Colors (Default)
@@ -114,9 +117,9 @@
                         <label for="Gname">Game Name:</label>
                         <input type="Text" class="form-control" id="Gname" placeholder="Enter Game Name" name="Gname">
                       </div>
-                      <div class="form-group" style="height: 250;">
+                      <div class="form-group">
                         <label for="WDYTT">Why Do You Think This?</label>
-                        <input type="Text" class="form-control" id="WDYTT" placeholder="" name="WDYTT" style="height: 250px;">
+                        <input type="Text" class="form-control" id="WDYTT" placeholder="" name="WDYTT" >
                       </div>
                       <div class="form-check">
                         <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" >
@@ -150,7 +153,7 @@
             </div>  
           </nav>
           <div class="tab" onclick="tab()" >
-          <div id="home" style="display: block;">
+          <div id="home">
             <h2>Newest Releases:</h2>
         <div id="showcase" class="carousel slide" data-ride="carousel">
 
@@ -163,21 +166,21 @@
             
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img class="mx-auto d-block" src="images/AliensFireteamElite.jpg" alt="AFE" width="90%" height="200">
+                <img class="mx-auto d-block" src="images/AliensFireteamElite.jpg" alt="AFE" >
                 <div class="carousel-caption d-md-block">
                     <h3>Aliens:Fireteam Elite</h3>
                     <p>A cooperative third-person survival shooter that drops you into a desperate fight agianst Xenomorph threat.</p>
                   </div>
               </div>
               <div class="carousel-item">
-                <img class="mx-auto d-block" src="images/psychonauts2.jpg" alt="P2" width="90%" height="200">
+                <img class="mx-auto d-block" src="images/psychonauts2.jpg" alt="P2" >
                 <div class="carousel-caption d-md-block">
                     <h3>Psychonauts 2</h3>
                     <p>Psychonauts 2 is a platform-adventure game with cinematic style and tons of customizable psychic powers.</p>
                   </div>
               </div>
               <div class="carousel-item">
-                <img class="mx-auto d-block" src="images/tetriseffectconneceted.jpg" alt="TEC" width="90%" height="200">
+                <img class="mx-auto d-block" src="images/tetriseffectconneceted.jpg" alt="TEC" >
                 <div class="carousel-caption d-md-block">
                     <h3>Tetris® Effect:Connected</h3>
                     <p>Tetris® Effect: Connected is Tetris like you've never seen it, or heard it, or felt it before.</p>
@@ -204,7 +207,7 @@
             
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img class="mx-auto d-block" src="images/SeasonOfTheLost.jpg" alt="SOTL" width="90%" height="200">
+                <img class="mx-auto d-block" src="images/SeasonOfTheLost.jpg" alt="SOTL" >
                 <div class="carousel-caption d-md-block">
                     <h3>Destiny 2</h3>
                     <p>The Newest Destiny Season Is Finally Here</p>
@@ -277,7 +280,7 @@
           </div>
           </div>
         <div class="tab" onclick="tab()">
-          <div id="newest" style="display: none;">
+          <div id="newest">
             <h2>Newest Releases:</h2>
         <div id="showcase" class="carousel slide" data-ride="carousel">
 
@@ -290,21 +293,21 @@
             
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img class="mx-auto d-block" src="images/AliensFireteamElite.jpg" alt="AFE" width="90%" height="200">
+                <img class="mx-auto d-block" src="images/AliensFireteamElite.jpg" alt="AFE">
                 <div class="carousel-caption d-md-block">
                     <h3>Aliens:Fireteam Elite</h3>
                     <p>A cooperative third-person survival shooter that drops you into a desperate fight agianst Xenomorph threat.</p>
                   </div>
               </div>
               <div class="carousel-item">
-                <img class="mx-auto d-block" src="images/psychonauts2.jpg" alt="P2" width="90%" height="200">
+                <img class="mx-auto d-block" src="images/psychonauts2.jpg" alt="P2">
                 <div class="carousel-caption d-md-block">
                     <h3>Psychonauts 2</h3>
                     <p>Psychonauts 2 is a platform-adventure game with cinematic style and tons of customizable psychic powers.</p>
                   </div>
               </div>
               <div class="carousel-item">
-                <img class="mx-auto d-block" src="images/tetriseffectconneceted.jpg" alt="TEC" width="90%" height="200">
+                <img class="mx-auto d-block" src="images/tetriseffectconneceted.jpg" alt="TEC">
                 <div class="carousel-caption d-md-block">
                     <h3>Tetris® Effect:Connected</h3>
                     <p>Tetris® Effect: Connected is Tetris like you've never seen it, or heard it, or felt it before.</p>
@@ -331,21 +334,21 @@
             
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img class="mx-auto d-block" src="images/12minutes.jpg" alt="AFE" width="90%" height="200">
+                <img class="mx-auto d-block" src="images/12minutes.jpg" alt="AFE">
                 <div class="carousel-caption d-md-block">
                     <h3>12 Minutes</h3>
                     <p style="-webkit-text-stroke-width: 0.25px; -webkit-text-stroke-color: black;">TWELVE MINUTES is a real-time top-down interactive thriller with an accessible click and drag interface.</p>
                   </div>
               </div>
               <div class="carousel-item">
-                <img class="mx-auto d-block" src="images/Madden22.jpg" alt="P2" width="90%" height="200">
+                <img class="mx-auto d-block" src="images/Madden22.jpg" alt="P2">
                 <div class="carousel-caption d-md-block">
                     <h3 style="-webkit-text-stroke-width: 0.25px; -webkit-text-stroke-color: black;">Madden 22</h3>
                     <p style="-webkit-text-stroke-width: 0.25px; -webkit-text-stroke-color: black;">More detailed staff management and skill tree progression systems, with comprehensive weekly game strategy</p>
                   </div>
               </div>
               <div class="carousel-item">
-                <img class="mx-auto d-block" src="images/BehindTheFrame.jpg" alt="TEC" width="90%" height="200">
+                <img class="mx-auto d-block" src="images/BehindTheFrame.jpg" alt="TEC">
                 <div class="carousel-caption d-md-block">
                     <h3 style="-webkit-text-stroke-width: 0.25px; -webkit-text-stroke-color: black;">Behind The Frame</h3>
                     <p style="-webkit-text-stroke-width: 0.25px; -webkit-text-stroke-color: black;">Behind the Frame is a vivid, interactive fiction about an aspiring artist on the cusp of finishing the final piece of her gallery submission.</p>
@@ -372,21 +375,21 @@
             
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img class="mx-auto d-block" src="images/Tormented souls.jpg" alt="TS" width="90%" height="200">
+                <img class="mx-auto d-block" src="images/Tormented souls.jpg" alt="TS">
                 <div class="carousel-caption d-md-block">
                     <h3></h3>
                     <p>Tormented souls is a return to classic survival horror.The fixed perspective adventure, tormented souls modernises for a new generation </p>
                   </div>
               </div>
               <div class="carousel-item">
-                <img class="mx-auto d-block" src="images/Iexpectyoutodie2.jpg" alt="P2" width="90%" height="200">
+                <img class="mx-auto d-block" src="images/Iexpectyoutodie2.jpg" alt="P2">
                 <div class="carousel-caption d-md-block">
                     <h3>I Expect You To Die2</h3>
                     <p style="-webkit-text-stroke-width: 0.25px; -webkit-text-stroke-color: black;">Putting your telekinetic abilities and problem solving skills to the ultimate test</p>
                   </div>
               </div>
               <div class="carousel-item">
-                <img class="mx-auto d-block" src="images/KingsBounty2.jpg" alt="TEC" width="90%" height="200">
+                <img class="mx-auto d-block" src="images/KingsBounty2.jpg" alt="TEC">
                 <div class="carousel-caption d-md-block">
                     <h3>Kings Bounty 2</h3>
                     <p>King’s Bounty II expands upon its tactical turn-based battles to offer players a truly immersive RPG</p>
@@ -404,7 +407,7 @@
           </div>
         </div>
         <div class="tab" onclick="tab()" >
-          <div id="recentup" style="display: none;">
+          <div id="recentup" >
             <h2>Recently Updated:</h2>
         <div id="showcase" class="carousel slide" data-ride="carousel">
 
@@ -458,21 +461,21 @@
             
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img class="mx-auto d-block" src="images/powerwash.jpg" alt="PWS" width="90%" height="200">
+                <img class="mx-auto d-block" src="images/powerwash.jpg" alt="PWS">
                 <div class="carousel-caption d-md-block">
                     <h3>PowerWashSimulator</h3>
                     <p style="-webkit-text-stroke-width: 0.25px; -webkit-text-stroke-color: black; color: green;">PowerWash Simulator Recently Added New Places To Clean All That Grime And Dirt In The Most Satisfying Way</p>
                   </div>
               </div>
               <div class="carousel-item">
-                <img class="mx-auto d-block" src="images/Warthunder.jpg" alt="WT" width="90%" height="200">
+                <img class="mx-auto d-block" src="images/Warthunder.jpg" alt="WT">
                 <div class="carousel-caption d-md-block">
                     <h3>Warthunder</h3>
                     <p>This update brings a wealth of new vehicles and improvements to War Thunder</p>
                   </div>
               </div>
               <div class="carousel-item">
-                <img class="mx-auto d-block" src="images/Stateofdecay2.jpg" alt="SOD2" width="90%" height="200">
+                <img class="mx-auto d-block" src="images/Stateofdecay2.jpg" alt="SOD2">
                 <div class="carousel-caption d-md-block">
                     <h3>StateOfDecay2</h3>
                     <p>The Homecoming Update brings the story of State of Decay back to where it all began</p>
@@ -531,7 +534,7 @@
           </div>
         </div>
         <div class="tab" onclick="tab()" >
-          <div id="popular" style="display: none;">
+          <div id="popular">
             <h2>Popular At The Moment:</h2>
         <div id="showcase" class="carousel slide" data-ride="carousel">
             <ul class="carousel-indicators">
@@ -618,21 +621,21 @@
             
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img class="mx-auto d-block" src="images/minecraft.jpg" alt="MC" width="90%" height="200">
+                <img class="mx-auto d-block" src="images/minecraft.jpg" alt="MC">
                 <div class="carousel-caption d-md-block">
                     <h3>Minecraft</h3>
                     <p>Minecraft is a sandbox video game developed by the Swedish video game developer Mojang Studios.</p>
                   </div>
               </div>
               <div class="carousel-item">
-                <img class="mx-auto d-block" src="images/csgo.jpg" alt="CSGO" width="90%" height="200">
+                <img class="mx-auto d-block" src="images/csgo.jpg" alt="CSGO">
                 <div class="carousel-caption d-md-block">
                     <h3>CSGO</h3>
                     <p>Counter-Strike took the gaming industry by surprise when the unlikely MOD became the most played online PC</p>
                   </div>
               </div>
               <div class="carousel-item">
-                <img class="mx-auto d-block" src="images/NBA2K22.jpg" alt="NBA" width="90%" height="200">
+                <img class="mx-auto d-block" src="images/NBA2K22.jpg" alt="NBA">
                 <div class="carousel-caption d-md-block">
                     <h3 style="-webkit-text-stroke-width: 0.25px; -webkit-text-stroke-color: white; color: black;">NBA2K22</h3>
                     <p style="-webkit-text-stroke-width: 0.25px; -webkit-text-stroke-color: white; color: black;">NBA2K22 is the latest title in the world-renowned, best-selling NBA 2K basketball video game series.</p>
@@ -649,7 +652,7 @@
           </div>
         </div> 
         <div class="tab" onclick="tab()">
-          <div id="faked" style="display: none;">
+          <div id="faked" >
             <h4 style="text-align: center;">Sorry We Couldn't Find What You Are Looking For Heres What We Recommend Instead</h4>
             <div id="showcase" class="carousel slide" data-ride="carousel">
 
@@ -701,21 +704,21 @@
               
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <img class="mx-auto d-block" src="images/minecraft.jpg" alt="MC" width="90%" height="200">
+                  <img class="mx-auto d-block" src="images/minecraft.jpg" alt="MC">
                   <div class="carousel-caption d-md-block">
                       <h3>Minecraft</h3>
                       <p>Minecraft is a sandbox video game developed by the Swedish video game developer Mojang Studios.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                  <img class="mx-auto d-block" src="images/csgo.jpg" alt="CSGO" width="90%" height="200">
+                  <img class="mx-auto d-block" src="images/csgo.jpg" alt="CSGO">
                   <div class="carousel-caption d-md-block">
                       <h3>CSGO</h3>
                       <p>Counter-Strike took the gaming industry by surprise when the unlikely MOD became the most played online PC</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                  <img class="mx-auto d-block" src="images/NBA2K22.jpg" alt="NBA" width="90%" height="200">
+                  <img class="mx-auto d-block" src="images/NBA2K22.jpg" alt="NBA">
                   <div class="carousel-caption d-md-block">
                       <h3 style="-webkit-text-stroke-width: 0.25px; -webkit-text-stroke-color: white; color: black;">NBA2K22</h3>
                       <p style="-webkit-text-stroke-width: 0.25px; -webkit-text-stroke-color: white; color: black;">NBA2K22 is the latest title in the world-renowned, best-selling NBA 2K basketball video game series.</p>

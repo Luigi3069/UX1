@@ -14,6 +14,7 @@ function swap1() {
         document.getElementById('popular').style.display = 'none';
         document.getElementById('faked').style.display = 'none';
         document.getElementById('home').style.display = 'none';
+        document.getElementById('signup').style.display = 'none';
     }
 }
 function swap2() {
@@ -29,6 +30,7 @@ function swap2() {
         document.getElementById('popular').style.display = 'none';
         document.getElementById('faked').style.display = 'none';
         document.getElementById('home').style.display = 'none';
+        document.getElementById('signup').style.display = 'none';
     }
 }
 function swap3() {
@@ -44,6 +46,7 @@ function swap3() {
         document.getElementById('popular').style.display = 'block';
         document.getElementById('faked').style.display = 'none';
         document.getElementById('home').style.display = 'none';
+        document.getElementById('signup').style.display = 'none';
     }
 }
 function swap5() {
@@ -59,6 +62,7 @@ function swap5() {
         document.getElementById('popular').style.display = 'none';
         document.getElementById('faked').style.display = 'block';
         document.getElementById('home').style.display = 'none';
+        document.getElementById('signup').style.display = 'none';
         document.getElementById('input').reset();
     }
 }
@@ -75,6 +79,23 @@ function swap0() {
         document.getElementById('popular').style.display = 'none';
         document.getElementById('faked').style.display = 'none';
         document.getElementById('home').style.display = 'Block';
+        document.getElementById('signup').style.display = 'none';
+    }
+}
+function swap6() {
+    console.log('test');
+    if(document.getElementById('menu0').onclick) {
+        console.log('I LIVE');
+        document.getElementById('menu0').style.border = 'none';
+        document.getElementById('menu1').style.border = 'none';
+        document.getElementById('menu2').style.border = 'none';
+        document.getElementById('menu3').style.border = 'none';
+        document.getElementById('newest').style.display = 'none';
+        document.getElementById('recentup').style.display = 'none';
+        document.getElementById('popular').style.display = 'none';
+        document.getElementById('faked').style.display = 'none';
+        document.getElementById('home').style.display = 'none';
+        document.getElementById('signup').style.display = 'Block';
     }
 }
 const savetolocalstorage = () => {
@@ -95,6 +116,7 @@ function swapcolour0() {
         document.getElementById("title6").style.color = "Black";
     }
 }
+
 function swapcolour1() {
     console.log('test');
     if(document.getElementById('colour1').oninput) {
